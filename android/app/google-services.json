@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "46899655758",
+    "firebase_url": "https://movify-android-app.firebaseio.com",
+    "project_id": "movify-android-app",
+    "storage_bucket": "movify-android-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46899655758:android:8d1af5347662aabed8ff1f",
+        "android_client_info": {
+          "package_name": "com.onefivedev.movie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46899655758-4en01tfanm94o2kni4bn7780ekhlknas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onefivedev.movie",
+            "certificate_hash": "f450cadf8095b9897b1d3880994db38fabc46e59"
+          }
+        },
+        {
+          "client_id": "46899655758-mmsq7pui1fonb24cjjik1q1ebp7niqkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANnUb6CGqPvBHukKiHKA8V1iGh63cNSKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46899655758-mmsq7pui1fonb24cjjik1q1ebp7niqkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

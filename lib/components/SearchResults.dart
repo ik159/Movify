@@ -65,7 +65,7 @@ class _SearchResultsState extends State<SearchResults> {
         title: Text('Results for "' + widget.search + '"'),
       ),
       backgroundColor: Colors.grey[200],
-      body: SingleChildScrollView(
+      body: widget.search == "" ? Center(child: Text("Your search box was empty :("),) :SingleChildScrollView(
               child: Column(
           children: [
             FutureBuilder<List>(

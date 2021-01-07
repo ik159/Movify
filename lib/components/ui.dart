@@ -131,8 +131,7 @@ class _UIPageState extends State<UIPage> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: TextFormField(
-                validator: (value) =>
-                    value.isEmpty ? 'Type Something...' : null,
+               
                 controller: myController,
                 
                 onFieldSubmitted: (String str) {
@@ -143,7 +142,9 @@ class _UIPageState extends State<UIPage> {
                   myController.clear();
                 },
                 style: TextStyle(color: Colors.white),
+                
                 decoration: InputDecoration(
+                  
                   filled: true,
                   fillColor: Colors.white.withOpacity(0.15),
                   enabledBorder: UnderlineInputBorder(

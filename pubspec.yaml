@@ -27,6 +27,8 @@ dependencies:
   flutter_offline:
   url_launcher:
   admob_flutter:
+  sqflite:
+  path_provider:
   # flutter_offline:
   # url_launcher:
   # admob_flutter:
@@ -57,12 +59,19 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/images/9gu9.gif
-   - assets/images/extraction.jpg
-   - assets/images/tmdb.jpg
-   - assets/images/backdrop.jpg
-   - assets/images/poster.jpg
-   - assets/images/error.png
+   
+    - assets/images/103.gif
+    - assets/images/9gu9.gif
+    - assets/images/polk.jpg
+    - assets/images/backdrop.jpg
+    - assets/images/doc.png
+    - assets/images/ik.jpeg
+    - assets/images/ig.png
+    - assets/images/git.png
+    - assets/images/linked.png
+    - assets/images/gmail.png
+    - assets/images/logo.png
+    - assets/images/tmdb.jpg
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
@@ -79,9 +88,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: OpenSans
+    - family: Montserrat
       fonts:
-        - asset: assets/fonts/OpenSans.ttf
+        - asset: assets/fonts/Montserrat-Regular.ttf
     - family: Electrolize      
       fonts:
         - asset: assets/fonts/Electrolize-Regular.ttf

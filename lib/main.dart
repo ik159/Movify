@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Movify Update',
+      title: 'Movify',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         fontFamily: 'Montserrat',

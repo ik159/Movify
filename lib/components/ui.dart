@@ -6,6 +6,7 @@ import 'package:movie/components/MoviesTab.dart';
 import 'package:movie/components/SearchResults.dart';
 import 'package:movie/components/TvShowsTab.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class UIPage extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class _UIPageState extends State<UIPage> {
   double width, height;
 
   final myController = TextEditingController();
-
+  final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
   @override
   void dispose() {
     myController.dispose();
@@ -67,14 +68,15 @@ class _UIPageState extends State<UIPage> {
                     'Rate this App',
                     style: TextStyle(color: Colors.grey[200]),
                   ),
-                  
-                    onTap: ()async { //https://play.google.com/store/apps/details?id=com.onefivedev.movie
-                      
-                  if (await canLaunch("https://play.google.com/store/apps/details?id=com.onefivedev.movie")) {
-                      await launch("https://play.google.com/store/apps/details?id=com.onefivedev.movie");
+                  onTap: () async {
+                    //https://play.google.com/store/apps/details?id=com.onefivedev.movie
+
+                    if (await canLaunch(
+                        "https://play.google.com/store/apps/details?id=com.onefivedev.movie")) {
+                      await launch(
+                          "https://play.google.com/store/apps/details?id=com.onefivedev.movie");
                     }
-                    },
-                 
+                  },
                 ),
                 Divider(
                   color: Colors.red,
@@ -131,20 +133,15 @@ class _UIPageState extends State<UIPage> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: TextFormField(
-               
                 controller: myController,
-                
                 onFieldSubmitted: (String str) {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => SearchResults(str)),
                   );
-                  myController.clear();
                 },
                 style: TextStyle(color: Colors.white),
-                
                 decoration: InputDecoration(
-                  
                   filled: true,
                   fillColor: Colors.white.withOpacity(0.15),
                   enabledBorder: UnderlineInputBorder(
@@ -159,12 +156,14 @@ class _UIPageState extends State<UIPage> {
                       color: Colors.white,
                     ),
                     onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SearchResults(myController.text)),
-                  );
-                  myController.clear();
-                },
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              SearchResults(myController.text),
+                        ),
+                      );
+                    },
                   ),
                   hintText: 'Movies, TV Shows and more...',
                   hintStyle: TextStyle(color: Colors.white),

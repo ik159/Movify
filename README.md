@@ -1,4 +1,4 @@
-# movie
+# Movify
 
 A new Flutter project.
 

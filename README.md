@@ -1,16 +1,8 @@
 # Movify
 
-A new Flutter project.
+This app is made for searching & saving Movies/TV Shows and their details.It uses The Movie Database(TMDb) Services but is not endorsed or certified by it.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Available on PlayStore : 
+<a href="https://play.google.com/store/apps/details?id=com.onefivedev.movie">
+  <img alt="Play Store" src="https://raw.githubusercontent.com/steverichey/google-play-badge-svg/master/img/en_get.svg" />
+</a>
